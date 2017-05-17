@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChatOnline</string>
+    <string name="act_main_send">Send</string>
+    <string name="act_main_enter_text">Enter text here...</string>
+</resources>

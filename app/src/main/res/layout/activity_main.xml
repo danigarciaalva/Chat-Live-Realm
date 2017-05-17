@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="io.dflabs.chatonline.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/act_main_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/act_main_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/act_main_send" />
+
+        <EditText
+            android:id="@+id/act_main_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/act_main_send"
+            android:hint="@string/act_main_enter_text"
+            android:inputType="textAutoComplete" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/act_main_chat"
+        android:layout_width="match_parent"
+        android:background="#e9e9e9"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_chat"
+        android:layout_above="@+id/act_main_input_layout" />
+</RelativeLayout>
